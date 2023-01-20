@@ -4,7 +4,7 @@
 ###
 
 ## Summary:
-#### This is an "Employee appraisal form", implemented using HTML, CSS, Javascript, jQuery and AJAX.
+#### In this program several image processing techniques are used.These techniques also include various filters like median filter, gaussian filter, linear filter, etc... . Some of the other techniques implemented here are scaling, cropping, rotation etc... .
 ###
 ###
 
@@ -13,8 +13,8 @@
   ##### -> In this project user (employee) inputs their work in the tables given.
   ##### -> User can dynamically add and delete the rows of the table. 
 
-  ##### -> Date of filling form is got automatically
-  ##### -> Also, once appraisal type is selected, duration/year is autopopulated 
+  ##### 3. In the 'Image_Processing' Directory there are 4 directories:
+  #####   i- "Images" Directory-
  ###
  ###
  
@@ -22,7 +22,7 @@
 
   #### 1. Clone the 'Image-Processing' github repository.
   #### 2. Navigate to the 'Image_Processing' Directory in that.
-  #### 3. Open the 'web_eaf.html' in the browser.
+  #### 3. 
   #### 4. The 'Employee appraisal form' opens in the browser
   ###
   #### Note- 
