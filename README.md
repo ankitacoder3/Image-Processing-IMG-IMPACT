@@ -14,29 +14,33 @@
 ###
 ###
 
-## The features of this project are as follows:
+## Features:
 
   ##### -> In this project image processing techniques are implemented
   ##### -> Image processing involves manipulating images at a time and extracts useful insights from them.
   ##### -> Image can be represented as a grid of n x n small pieces, which are called pixels. 
   ##### -> If we can assign numbers to each colour, then, the grid of pixels can be represented as a numerical matrix.
-  ###
+ ###
+###
   
+## About :
+
   ##### -> Techniques implemented are:
-  ##### *a. filters:- gaussian filter, median filter, linear filter, etc...*
-  ##### *b. transformation techniques (or techniques):- cropping, scaling, rotation, grayscaling, etc...*
+  ###### *a. filters:- gaussian filter, median filter, linear filter, etc...*
+  ###### *b. transformation techniques (or techniques):- cropping, scaling, rotation, grayscaling, etc...*
   ###
   ##### -> Concepts used are:  
-  ##### *Linear transformation, SVD, Fourier transformations*
+  ###### *Linear transformation, SVD, Fourier transformations*
   ###
-  ##### -> The language used to implement these is:  *Python*
+  ##### -> The language used to implement these is:
+  ###### *Python*
   ###
   
   
 ###
 ###
   
-## Contents in the repository:
+## Contents :
 
 ##### ---> In the 'Image_Processing' Directory there are 4 directories:
 #####   i- "Images" Directory- contains all the Images used in the programs.
