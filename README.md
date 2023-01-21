@@ -32,7 +32,7 @@
   ##### -> Concepts used are:  
   ###### *Linear transformation, SVD, Fourier transformations*
   ###
-  ##### -> The language used to implement these is:
+  ##### -> Language used is:
   ###### *Python*
   ###
   
