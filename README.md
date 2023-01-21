@@ -13,11 +13,11 @@
   ##### -> In this project user (employee) inputs their work in the tables given.
   ##### -> User can dynamically add and delete the rows of the table. 
 
-  ##### 3. In the 'Image_Processing' Directory there are 4 directories:
-  #####   i- "Images" Directory- contains all the Images used in the programs.
-  ##### \t  ii- "Individual_Filters&Techniques" Directory- contains the techniques and filters implemented separately.
-  ##### \t  iii- "All_Filters_Combined" Directory- contains one program for the techniques and filters combined.
-  ##### \t  iv- "Extra_Contents" Directory- contains extra information about the techniques and filters used.
+  ##### ---> In the 'Image_Processing' Directory there are 4 directories:
+  ##### *tabspace*   i- "Images" Directory- contains all the Images used in the programs.
+  ##### *tabspace*   ii- "Individual_Filters&Techniques" Directory- contains the techniques and filters implemented separately.
+  ##### *tabspace*   iii- "All_Filters_Combined" Directory- contains one program for the techniques and filters combined.
+  ##### *tabspace*   iv- "Extra_Contents" Directory- contains extra information about the techniques and filters used.
   
   
  ###
