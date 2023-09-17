@@ -22,11 +22,11 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 * Contents :
 
-   In the ```'IMG-IMPACT'``` Directory there are 4 directories:
-    i- ```"Images"``` Directory- contains all the Images used in the programs.
-    ii- ```"Individual_Filters&Techniques"``` Directory- contains the techniques and filters implemented separately.
-     iii- ```"All_Filters_Combined"``` Directory- contains one program for the techniques and filters combined.
-     iv- ```"Extra_Contents"``` Directory- contains extra information about the techniques and filters used.
+  In the ```IMG-IMPACT``` Directory there are 4 directories:
+    i- ```Images``` Directory- contains all the Images used in the programs.
+    ii- ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
+     iii- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
+     iv- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
 
 * Features:
 
@@ -73,15 +73,22 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
  
 ## Steps for Execution
 
-         1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
-         2. Navigate to the 'IMG-IMPACT' Directory in that.
-         3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
-         4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
-         5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
-  ###
-         Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
-  ###
-  ###
+  1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
+     ```sh
+          git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
+      ```
+ 2. Navigate to the 'IMG-IMPACT' Directory in that.
+```sh
+  cd Image-Processing--IMG-IMPACT
+    cd IMG-IMPACT
+```
+
+  3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
+4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
+ 5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
+
+  Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
+  
   
   
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
