@@ -24,10 +24,11 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 * Contents :
 
   In the ```IMG-IMPACT``` Directory there are 4 directories:
+  
     i- ```Images``` Directory- contains all the Images used in the programs.
     ii- ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
-     iii- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
-     iv- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
+  iii- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
+  iv- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
 
 * Features:
 
