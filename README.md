@@ -19,6 +19,7 @@ In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques ar
 These techniques also include various ```filters``` like median filter, gaussian filter, linear filter, etc... 
 
 Other techniques implemented here are ```scaling```, ```cropping```, ```rotation``` etc... .
+<br>
 
 * Contents :
 
@@ -86,8 +87,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
 4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
  5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
-
-        Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
+    Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
   
   
   
