@@ -75,13 +75,13 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
   1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
      ```sh
-          git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
+     git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
       ```
  2. Navigate to the 'IMG-IMPACT' Directory in that.
-```sh
-  cd Image-Processing--IMG-IMPACT
+    ```sh
+    cd Image-Processing--IMG-IMPACT
     cd IMG-IMPACT
-```
+    ```
 
   3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
 4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
