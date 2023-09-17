@@ -1,20 +1,21 @@
-# Image-Processing
+# Image-Processing--IMG-IMPACT
+
 ###
 ###
 ###
 
-## Summary:
+## Summary
 #### In this project several image processing techniques are used. These techniques also include various filters like median filter, gaussian filter, linear filter, etc... . Some of the other techniques implemented here are scaling, cropping, rotation etc... .
 ###
 ###
 
-## Objective:
-##### ==> To transform an image to implement techniques, like image rotation, cropping, image smoothening, filters etc…
-##### ==> The techniques mentioned above are implemented using concepts such as linear transformation and SVD
+## Objective
+* To transform an image to implement techniques, like image rotation, cropping, image smoothening, filters etc…
+* The techniques mentioned above are implemented using concepts such as linear transformation and SVD
 ###
 ###
 
-## Features:
+## Features
 
   ##### -> In this project image processing techniques are implemented
   ##### -> Image processing involves manipulating images at a time and extracts useful insights from them.
@@ -54,8 +55,8 @@
  
 ## Steps for execution:
 
-  #### 1. Clone the 'Image-Processing' github repository.
-  #### 2. Navigate to the 'Image_Processing' Directory in that.
+  #### 1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
+  #### 2. Navigate to the 'IMG-IMPACT' Directory in that.
   #### 3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
   #### 4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
   #### 5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
