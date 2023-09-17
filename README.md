@@ -8,7 +8,7 @@ In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques ar
   <summary color= blue >Table of Contents</summary>
 <li>Introduction</li>
 <li> Prerequisites and Techstack</li>
-<li> Steps for execution</li>
+<li> Steps for Execution</li>
 <li> Usage</li>
 </details>
 </br>
