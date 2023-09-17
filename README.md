@@ -18,24 +18,25 @@ In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques ar
 
 These techniques also include various ```filters``` like median filter, gaussian filter, linear filter, etc... 
 
-Other techniques implemented here are ```scaling```, ```cropping```, ```rotation``` etc... .
-<br>
+Other techniques implemented here are ```scaling```, ```cropping```, ```rotation``` etc... 
+
+</br>
 
 * Contents :
 
   In the ```IMG-IMPACT``` Directory there are 4 directories:
   
-    i- ```Images``` Directory- contains all the Images used in the programs.
-    ii- ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
-  iii- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
-  iv- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
+  - ```Images``` Directory- contains all the Images used in the programs.
+  - ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
+  - ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
+  - ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
 
 * Features:
 
     - In this project image processing techniques are implemented
     - Image processing involves manipulating images at a time and extracts useful insights from them.
     - Image can be represented as a grid of n x n small pieces, which are called pixels. 
-               - If we can assign numbers to each colour, then, the grid of pixels can be represented as a numerical matrix.
+    - If we can assign numbers to each colour, then, the grid of pixels can be represented as a numerical matrix.
  ###
 ###
 
