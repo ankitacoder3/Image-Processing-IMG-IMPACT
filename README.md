@@ -85,11 +85,12 @@
   #### 4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
   #### 5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
   ###
-
-    <p align="right">(<a href="#readme-top">back to top</a>)</p>
-  </br>
   ###### Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
   ###
   ###
   
   #
+
+  
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  </br>
