@@ -43,7 +43,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 ###
 ###
 
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right"><a href="#readme-top">back to top</a></p>
   </br>
 
 <!--
@@ -68,7 +68,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   * Libraries used : opencv, etc
 
 
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right"><a href="#readme-top">back to top</a></p>
   </br>
   
   
@@ -93,7 +93,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   
   
   
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right"><a href="#readme-top">back to top</a></p>
   </br>
 
 ## Usage
@@ -103,5 +103,5 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 * IMG-IMPACT application also has operations such as rotating, cropping the image.
 * IMG-IMPACT can be used to create new images, from the old images.
 
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right"><a href="#readme-top">back to top</a></p>
   </br>
