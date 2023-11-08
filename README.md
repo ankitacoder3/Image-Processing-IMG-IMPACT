@@ -97,6 +97,19 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 <br>
 
+  * Libraries :
+
+    
+    * OpenCV or cv2
+    * Pillow or PIL
+    * NumPy
+    * argparse
+    * matplotlib
+    * math
+
+
+<br>
+
   * Concepts :
 
     
@@ -118,17 +131,6 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
         The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
         This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
 
-<br>
-
-  * Libraries :
-
-    
-    * OpenCV or cv2
-    * Pillow or PIL
-    * NumPy
-    * argparse
-    * matplotlib
-    * math
 
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
