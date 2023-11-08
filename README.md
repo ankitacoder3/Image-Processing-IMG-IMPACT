@@ -1,6 +1,6 @@
 # Image-Processing--IMG-IMPACT
 
-In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques are used.
+In the project ```IMG-IMPACT``` several    ```Image Processing``` techniques are used.
 
 
 
