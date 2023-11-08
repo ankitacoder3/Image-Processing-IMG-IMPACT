@@ -103,6 +103,8 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 <a name="a4"></a>
 ## Usage
 
+
+
 * IMG-IMPACT application can transform the pictures, given as input, into different variations of the same picture.
 
   
