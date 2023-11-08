@@ -24,20 +24,47 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 </br>
 
-* Contents :
+* Files :
 
   In the ```IMG-IMPACT``` Directory there are 4 directories:
   
-  - ```Images``` Directory- contains all the Images used in the programs.
-  - ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
-  - ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
-  - ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
+  - 1- ```Images``` Directory- contains all the Images used in the programs.
+    
+  - 2- ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
+    
+  - 3- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
+    
+  - 4- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
+
+</br>
+
+### <b>Repository Structure :</b>
+
+  Below is the structure of the ```IMG-IMPACT``` project repository
+  
+  ```plaintext
+    Image-Processing--IMG-IMPACT/
+    ├── IMG-IMPACT/           # Project Folder             
+    │   ├── All_Filters_Combined/              # Folder3
+    │   ├── Extra_Contents/                    # Folder4
+    │   ├── Images/                            # Folder1
+    │   ├── Individual_Filters&Techniques/     # Folder2
+    │   └── IMG-IMPACT.png   # Project Logo     
+    └─── README.md           # Repository README
+    
+  ```
+
+</br>
+
 
 * Features:
 
     - In this project image processing techniques are implemented
+      
     - Image processing involves manipulating images at a time and extracts useful insights from them.
-    - Image can be represented as a grid of n x n small pieces, which are called pixels. 
+      
+    - Image can be represented as a grid of n x n small pieces, which are called pixels.
+      
     - If we can assign numbers to each colour, then, the grid of pixels can be represented as a numerical matrix.
  ###
 ###
@@ -54,14 +81,6 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 * The techniques mentioned above are implemented using concepts such as linear transformation and SVD
 ###
 ###
-
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
-  </br>
-
-
-
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
-  </br>
   -->
 
   
@@ -84,15 +103,27 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
      ```sh
      git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
       ```
+     <br>
+     
  2. Navigate to the 'IMG-IMPACT' Directory in that.
     ```sh
     cd Image-Processing--IMG-IMPACT
     cd IMG-IMPACT
     ```
+<br>
 
   3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
+
+     <br>
+     
 4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
+
+   <br>
+   
  5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
+
+    <br>
+    
     Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
   
   
