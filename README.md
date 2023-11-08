@@ -89,12 +89,13 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 <a name="a2"></a>
 ## Prerequisites and Techstack
 
-
+<br>
     
   * Language :
 
     **Python**
 
+<br>
 
   * Concepts :
 
@@ -117,6 +118,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
         The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
         This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
 
+<br>
 
   * Libraries :
 
