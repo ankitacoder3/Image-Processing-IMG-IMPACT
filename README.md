@@ -88,8 +88,20 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   
 <a name="a2"></a>
 ## Prerequisites and Techstack
-  * Concepts used are:  Linear transformation, SVD, Fourier transformations
+
+
+  * Concepts used are:
+
+    
+      * Linear transformation
+        
+      * SVD
+        
+      * Fourier transformations
+    
   * Language used is: Python
+
+
   * Libraries used : opencv, etc
 
 
