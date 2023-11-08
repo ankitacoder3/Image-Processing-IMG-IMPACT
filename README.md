@@ -24,7 +24,8 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 </br>
 
-* Files :
+
+### <b>Files :</b>
 
   In the ```IMG-IMPACT``` Directory there are 4 directories:
   
@@ -57,7 +58,8 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 </br>
 
 
-* Features:
+
+### <b>Features :</b>
 
     - In this project image processing techniques are implemented
       
