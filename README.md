@@ -93,7 +93,13 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   * Concepts used are:
 
     
-      * Linear transformation
+      * Linear transformation -
+
+        Linear transformations are mathematical operations that maintain the fundamental properties of vector spaces.
+
+        They are often represented using matrices and are essential in geometry, and transformations in computer graphics.
+
+        They provide a structured way to describe and manipulate complex relationships between vectors.
         
       * SVD
         
