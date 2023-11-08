@@ -90,6 +90,12 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 ## Prerequisites and Techstack
 
 
+    
+  * Language :
+
+    **Python**
+
+
   * Concepts :
 
     
@@ -110,9 +116,6 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
         Fourier transformations are mathematical methods used to represent functions or signals in the frequency domain.
         The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
         This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
-    
-  * Language :
-    **Python**
 
 
   * Libraries :
