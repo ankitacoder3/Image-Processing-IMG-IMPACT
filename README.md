@@ -116,7 +116,14 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 
   * Libraries :
-    * opencv
+
+    
+    * OpenCV or cv2
+    * Pillow or PIL
+    * NumPy
+    * argparse
+    * matplotlib
+    * math
 
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
