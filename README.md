@@ -90,7 +90,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 ## Prerequisites and Techstack
 
 
-  * Concepts used are:
+  * Concepts :
 
     
       * **Linear transformation** -
@@ -105,12 +105,18 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
         Here, U and V are orthogonal matrices, and Σ is a diagonal matrix containing singular values.
         SVD is employed in image compression, as it uncovers hidden patterns and relationships in data
         
-      * Fourier transformations
+      * **Fourier transformations** -
+   
+        Fourier transformations are mathematical methods used to represent functions or signals in the frequency domain.
+        The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
+        This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
     
-  * Language used is: Python
+  * Language :
+    **Python**
 
 
-  * Libraries used : opencv, etc
+  * Libraries :
+    * opencv
 
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
