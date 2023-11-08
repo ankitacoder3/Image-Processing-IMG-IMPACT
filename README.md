@@ -6,13 +6,15 @@ In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques ar
 
 <details>
   <summary color= blue >Table of Contents</summary>
-<li>Introduction</li>
-<li> Prerequisites and Techstack</li>
-<li> Steps for Execution</li>
-<li> Usage</li>
+<li> <a href="#a1">Introduction</a></li>
+<li> <a href="#a2"> Prerequisites and Techstack</a></li>
+<li> <a href="#a3"> Steps for Execution </a></li>
+<li>  <a href="#a4">Usage</a></li>
+<a href="#end"><u><i>Skip to END...</i></u></a>
 </details>
 </br>
 
+<a name="a1"></a>
 ## Introduction
 In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques are used. 
 
@@ -43,7 +45,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 ###
 ###
 
-  <p align="right"><a href="#readme-top">back to top</a></p>
+  <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
 
 <!--
@@ -62,18 +64,20 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   </br>
   -->
 
+  
+<a name="a2"></a>
 ## Prerequisites and Techstack
   * Concepts used are:  Linear transformation, SVD, Fourier transformations
   * Language used is: Python
   * Libraries used : opencv, etc
 
 
-  <p align="right"><a href="#readme-top">back to top</a></p>
+  <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
   
   
 
- 
+<a name="a3"></a> 
 ## Steps for Execution
 
   1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
@@ -93,15 +97,25 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   
   
   
-  <p align="right"><a href="#readme-top">back to top</a></p>
+  <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
 
+<a name="a4"></a>
 ## Usage
 
 * IMG-IMPACT application can transform the pictures, given as input, into different variations of the same picture.
+
+  
 * IMG-IMPACT application has many filters like linear filter, median filter etc.
+
+  
 * IMG-IMPACT application also has operations such as rotating, cropping the image.
+
+  
 * IMG-IMPACT can be used to create new images, from the old images.
 
-  <p align="right"><a href="#readme-top">back to top</a></p>
+  <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
+<a name="end"></a>
+Thank you for exploring the IMG-IMPACT project. Happy Image Filtering and Processing! 🍿🎬
+
