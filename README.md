@@ -61,7 +61,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 
 ### <b>Features :</b>
 
-    - In this project image processing techniques are implemented
+  - In this project image processing techniques are implemented
       
     - Image processing involves manipulating images at a time and extracts useful insights from them.
       
@@ -101,28 +101,34 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
 <a name="a3"></a> 
 ## Steps for Execution
 
-  1. Clone the 'Image-Processing--IMG-IMPACT' github repository.
+<br>
+
+  1. Clone the ```'Image-Processing--IMG-IMPACT'``` github repository.
      ```sh
      git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
       ```
      <br>
      
- 2. Navigate to the 'IMG-IMPACT' Directory in that.
+ 2. Navigate to the ```'IMG-IMPACT' Directory``` in that.
     ```sh
     cd Image-Processing--IMG-IMPACT
     cd IMG-IMPACT
     ```
 <br>
 
-  3. Navigate to the 'Individual_Filters&Technique' Directory to execute techniques and filters separately; By opening any file in python idle and running it.
+  3. Navigate to the ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
+
+     By opening any file in python idle and running it.
 
      <br>
      
-4. Navigate to the 'All_Filters_Combined' Directory to execute the techniques and filters combined; By opening any file in python idle and running it.
+4. Navigate to the ```'All_Filters_Combined' Directory``` to execute the techniques and filters ```combined```.
+  
+   By opening any file in python idle and running it.
 
    <br>
    
- 5. Navigate to the 'Extra_Contents' Directory to find extra information about the filters and techniques.
+ 5. Navigate to the ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
 
     <br>
     
@@ -132,6 +138,7 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
+   </br>
 
 <a name="a4"></a>
 ## Usage
