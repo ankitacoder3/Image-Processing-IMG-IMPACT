@@ -93,15 +93,17 @@ Other techniques implemented here are ```scaling```, ```cropping```, ```rotation
   * Concepts used are:
 
     
-      * Linear transformation -
+      * **Linear transformation** -
 
         Linear transformations are mathematical operations that maintain the fundamental properties of vector spaces.
-
         They are often represented using matrices and are essential in geometry, and transformations in computer graphics.
-
         They provide a structured way to describe and manipulate complex relationships between vectors.
         
-      * SVD
+      * **SVD**-
+   
+        Singular Value Decomposition, or SVD, is a powerful matrix factorization technique that breaks down a matrix into three simpler components: U, Σ, and V.
+        Here, U and V are orthogonal matrices, and Σ is a diagonal matrix containing singular values.
+        SVD is employed in image compression, as it uncovers hidden patterns and relationships in data
         
       * Fourier transformations
     
