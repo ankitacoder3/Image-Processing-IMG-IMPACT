@@ -16,7 +16,7 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 
 <a name="a1"></a>
 ## Introduction
-```IMG-IMPACT ``` is a project on <i> **Impacting the Images** </i>, using various ```Image Processing Technologies and Techniques``` .
+```IMG-IMPACT``` is a project on <i> **Impacting the Images** </i>, using various ```Image Processing Technologies and Techniques``` .
 
 These ```Techniques``` include various <i> **Filters** </i> like ```Median filter```, ```Gaussian filter```, ```Linear filter```, etc... 
 
@@ -61,13 +61,13 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 ### <b>Features :</b>
 
-  - In this project image processing techniques are implemented
+  - In **IMG-IMPACT** project **Image Processing** techniques are implemented.
       
-    - Image processing involves manipulating images at a time and extracts useful insights from them.
+    - Image processing involves *manipulating images* at a time and extracting useful insights from them.
       
-    - Image can be represented as a grid of n x n small pieces, which are called pixels.
+    - Image can be represented as a *grid of n x n small pieces*, which are called *pixels*.
       
-    - If we can assign numbers to each colour, then, the grid of pixels can be represented as a numerical matrix.
+    - If we can *assign numbers* to each colour, then, the grid of pixels can be represented as a ***numerical matrix***.
  ###
 ###
 
@@ -185,16 +185,16 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 
 
-* IMG-IMPACT application can transform the pictures, given as input, into different variations of the same picture.
+* IMG-IMPACT application can ***transform the pictures***, given as input, into different variations of the same picture.
 
   
-* IMG-IMPACT application has many filters like linear filter, median filter etc.
+* IMG-IMPACT application has ***many filters*** like linear filter, median filter etc. The user can ***select any filter***.
 
   
-* IMG-IMPACT application also has operations such as rotating, cropping the image.
+* IMG-IMPACT application also has ***many operations and methods*** such as rotating, cropping the image, etc. The user can ***select any method***.
 
   
-* IMG-IMPACT can be used to create new images, from the old images.
+* IMG-IMPACT can be used to ***create new images***, from the old images.
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
