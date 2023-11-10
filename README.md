@@ -203,10 +203,10 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
      <br>
      
       i.  ***Navigation*** :
-           a. Navigate to  ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
+        a. Navigate to  ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
            ```sh
-            cd Individual_Filters&Technique
-          ```
+           cd Individual_Filters&Technique
+           ```
       
       <br>
       
