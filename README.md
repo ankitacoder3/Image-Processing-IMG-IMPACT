@@ -151,8 +151,8 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 <br>
 
   * Concepts :
-<details>
-<summary color= blue ><u> <b><i>Linear transformation, SVD, Fourier transformations</i></b></u></summary>
+    <details>
+    <summary color= blue ><u> <b><i>Linear transformation, SVD, Fourier transformations</i></b></u></summary>
 
     
       * **Linear transformation** -
@@ -173,7 +173,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
         The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
         This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
 
-</details>
+  </details>
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
