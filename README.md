@@ -6,7 +6,7 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 
 
 <details>
-  <summary > <font color="red">Table of Contents</summary>
+  <summary > <font color="red">Table of Contents</font></summary>
 <li> <a href="#a1">Introduction</a></li>
 <li> <a href="#a2"> Prerequisites and Techstack</a></li>
 <li> <a href="#a3"> Steps for Execution </a></li>
