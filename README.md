@@ -43,7 +43,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 ### <b>Repository Structure :</b>
 
 <details>
-  <summary color= blue > <u> TAP</u> to view <b><i>IMG-IMPACT repo structure</i></b></summary>
+  <summary color= blue ><u> <b><i>IMG-IMPACT repo structure</i></b></u></summary>
 
   Below is the structure of the ```IMG-IMPACT``` project repository
   
