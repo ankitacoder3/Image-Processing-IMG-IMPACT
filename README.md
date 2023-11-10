@@ -230,7 +230,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
       cd Images
       ```
       
-      <br><br><br>
+      <br>  <p align="right"><a href="#readme-top">Back to TOP</a></p> <br><br>
       
      ii.  ***Execution*** :
 
