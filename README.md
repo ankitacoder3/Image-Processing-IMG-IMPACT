@@ -1,6 +1,6 @@
 # Image-Processing--IMG-IMPACT
 
-In the project ```IMG-IMPACT``` several    ```Image Processing``` techniques are used.
+In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are used.
 
 
 
@@ -16,11 +16,11 @@ In the project ```IMG-IMPACT``` several    ```Image Processing``` techniques are
 
 <a name="a1"></a>
 ## Introduction
-In the project ```IMG-IMPACT ``` several    ```Image Processing``` techniques are used. 
+```IMG-IMPACT ``` is a project on **Impacting** the **Images**, using various ```Image Processing Technologies and Techniques``` .
 
-These techniques also include various ```filters``` like median filter, gaussian filter, linear filter, etc... 
+These ```Techniques``` include various ```filters``` like ```median filter```, gaussian filter, linear filter, etc... 
 
-Other techniques implemented here are ```scaling```, ```cropping```, ```rotation``` etc... 
+Other ```Technologies``` implemented here are ```scaling```, ```cropping```, ```rotation``` etc... 
 
 </br>
 
