@@ -73,8 +73,16 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    └── IMG-IMPACT.png    #logo
     │   │ 
     │   ├── Individual_Filters&Techniques/     # Folder2
-    │   │    ├── IMG-IMPACT_Slides.pdf
-    │   │    ├── IMG-IMPACT_Information.pdf
+    │   │    ├── 1_ColourFilter.py
+    │   │    ├── 2_GrayScale.py
+    │   │    ├── 3_ImageReconstruction.py
+    │   │    ├── 4_ImageCropping.py
+    │   │    ├── 5_LinearFilter.py
+    │   │    ├── 6_ImageResizing.py
+    │   │    ├── 7.py
+    │   │    ├── 8.py
+    │   │    ├── 9_MedianFilter.py
+    │   │    ├── 10_ImageScaling.py
     │   │    └── IMG-IMPACT.png   #logo
     │   │ 
     │   └── IMG-IMPACT.png   # Project Logo
