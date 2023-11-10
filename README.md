@@ -16,11 +16,11 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 
 <a name="a1"></a>
 ## Introduction
-```IMG-IMPACT ``` is a project on ```**Impacting** the **Images**```, using various ```Image Processing Technologies and Techniques``` .
+```IMG-IMPACT ``` is a project on <i> **Impacting the Images** </i>, using various ```Image Processing Technologies and Techniques``` .
 
 These ```Techniques``` include various ```filters``` like ```Median filter```, ```Gaussian filter```, ```Linear filter```, etc... 
 
-Other ```Technologies``` implemented here are ```Scaling```, ```Cropping```, ```R0otation```, etc... 
+The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```, ```R0otation```, etc... 
 
 </br>
 
