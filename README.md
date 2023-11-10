@@ -27,15 +27,15 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 ### <b>Files :</b>
 
-  In the ```IMG-IMPACT``` Directory there are 4 directories:
+  In the ```IMG-IMPACT Directory``` there are 4 directories:
   
-  - 1- ```Images``` Directory- contains all the Images used in the programs.
+  - 1- ```Images Directory```- contains all the Images used in the programs.
     
-  - 2- ```Individual_Filters&Techniques``` Directory- contains the techniques and filters implemented separately.
+  - 2- ```Individual_Filters&Techniques Directory```- contains the techniques and filters implemented separately.
     
-  - 3- ```All_Filters_Combined``` Directory- contains one program for the techniques and filters combined.
+  - 3- ```All_Filters_Combined Directory```- contains one program for the techniques and filters combined.
     
-  - 4- ```Extra_Contents``` Directory- contains extra information about the techniques and filters used.
+  - 4- ```Extra_Contents Directory```- contains extra information about the techniques and filters used.
 
 </br>
 
