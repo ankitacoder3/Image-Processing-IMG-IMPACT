@@ -202,7 +202,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 
 
-
+      <br>
 
      
       i.  ***Navigation*** :
