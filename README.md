@@ -209,19 +209,19 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
       cd Individual_Filters&Technique
       ```
       
-      <br><br><br>
+      <br><br>
            b. Navigate to  ```'All_Filters_Combined' Directory``` to execute techniques and filters ```combined```.
       ```sh
       cd All_Filters_Combined
       ```
       
-      <br><br><br>
+      <br><br>
            c. Navigate to  ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
       ```sh
       cd Extra_Contents
       ```
       
-      <br><br><br>
+      <br><br>
            d. Navigate to  ```'Images' Directory``` to ```edit``` the images used.
       ```sh
       cd Images
