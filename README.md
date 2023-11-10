@@ -196,15 +196,15 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     cd Image-Processing--IMG-IMPACT
     cd IMG-IMPACT
     ```
-<br>
+  <br>
 
   3. Navigate to ```ANY of the Directories``` and ```execute the respective files``` present in that directory.
      
-<br>
+  <br>
 
-  i.  ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
+   i.  ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
 
-            ```sh
+  ```sh
               cd Individual_Filters&Technique
            ```
 
