@@ -46,12 +46,39 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   
   ```plaintext
     Image-Processing--IMG-IMPACT/
-    ├── IMG-IMPACT/           # Project Folder             
+    │   
+    ├── IMG-IMPACT/           # Project Folder
+    │   │              
     │   ├── All_Filters_Combined/              # Folder3
+    │   │    ├── IMG-IMPACT.py
+    │   │    └── IMG-IMPACT.png    #logo
+    │   │ 
     │   ├── Extra_Contents/                    # Folder4
+    │   │    ├── IMG-IMPACT_Slides.pdf
+    │   │    ├── IMG-IMPACT_Information.pdf
+    │   │    └── IMG-IMPACT.png    #logo
+    │   │ 
     │   ├── Images/                            # Folder1
+    │   │    ├── 1_2_rover.jpg
+    │   │    ├── 1_new_filtering.jpg
+    │   │    ├── 3_4_turtle.jpg
+    │   │    ├── 4_CroppedImage.jpg
+    │   │    ├── 5_desktop.jpg
+    │   │    ├── 6_scenary.jpg
+    │   │    ├── 6_scenary1.jpg
+    │   │    ├── 7_8_emoji.png.png
+    │   │    ├── 9_person.png
+    │   │    ├── 10_pig.jpg
+    │   │    ├── 10_result.jpg
+    │   │    └── IMG-IMPACT.png    #logo
+    │   │ 
     │   ├── Individual_Filters&Techniques/     # Folder2
-    │   └── IMG-IMPACT.png   # Project Logo     
+    │   │    ├── IMG-IMPACT_Slides.pdf
+    │   │    ├── IMG-IMPACT_Information.pdf
+    │   │    └── IMG-IMPACT.png   #logo
+    │   │ 
+    │   └── IMG-IMPACT.png   # Project Logo
+    │   
     └─── README.md           # Repository README
     
   ```
