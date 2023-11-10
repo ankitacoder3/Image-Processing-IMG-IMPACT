@@ -203,10 +203,9 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   <br>
 
    i.  ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
-
   ```sh
-              cd Individual_Filters&Technique
-           ```
+          cd Individual_Filters&Technique
+        ```
 
   ii. By opening any file in python idle or command prompt, and running it.
 
