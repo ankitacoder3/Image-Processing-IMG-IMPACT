@@ -200,6 +200,10 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   3. Navigate to ```ANY of the Directories``` and ```execute the respective files``` present in that directory.
 
+
+
+
+
      
       i.  ***Navigation*** :
           <br><br>
