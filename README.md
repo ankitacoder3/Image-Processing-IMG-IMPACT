@@ -199,18 +199,26 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 <br>
 
   3. Navigate to the ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
+     ```sh
+    cd Individual_Filters&Technique
+    ```
 
-     By opening any file in python idle and running it.
+  4. By opening any file in python idle or command prompt, and running it.
+
 
      <br>
      
-4. Navigate to the ```'All_Filters_Combined' Directory``` to execute the techniques and filters ```combined```.
+5. Navigate to the ```'All_Filters_Combined' Directory``` to execute the techniques and filters ```combined```.
+    ```sh
+    cd All_Filters_Combined
+    ```
   
-   By opening any file in python idle and running it.
+   6.By opening any file in python idle and running it.
+   
 
    <br>
    
- 5. Navigate to the ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
+ 7. Navigate to the ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
 
     <br>
     
