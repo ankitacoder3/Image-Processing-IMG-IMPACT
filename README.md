@@ -5,14 +5,14 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 
 
 
-<details>
+
   <summary style="color: red;">Table of Contents</summary>
 <li> <a href="#a1">Introduction</a></li>
 <li> <a href="#a2"> Prerequisites and Techstack</a></li>
 <li> <a href="#a3"> Steps for Execution </a></li>
 <li>  <a href="#a4">Usage</a></li>
 <a href="#end"><u><i>Skip to END...</i></u></a>
-</details>
+<details></details>
 </br>
 
 <a name="a1"></a>
