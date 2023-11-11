@@ -12,7 +12,7 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 <li> <a href="#a3"> Steps for Execution </a></li>
 <li>  <a href="#a4">Usage</a></li>
 <a href="#end"><u><i>Skip to END...</i></u></a>
-<details></details>
+<!--<details></details>-->
 </br>
 
 <a name="a1"></a>
