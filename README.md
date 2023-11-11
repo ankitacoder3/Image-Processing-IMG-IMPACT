@@ -75,7 +75,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 10_result.jpg
     │   │    └── IMG-IMPACT.png    #logo
     │   │ 
-    │   ├── Individual_Filters&Techniques/     # Folder2
+    │   ├── Individual_Filters_Techniques/     # Folder2
     │   │    ├── 1_ColourFilter.py
     │   │    ├── 2_GrayScale.py
     │   │    ├── 3_ImageReconstruction.py
@@ -207,9 +207,9 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
      
       i.  ***Navigation*** :
           <br><br>
-           a. Navigate to  ```'Individual_Filters&Techniques' Directory``` to execute techniques and filters ```separately```.
+           a. Navigate to  ```'Individual_Filters_Techniques' Directory``` to execute techniques and filters ```separately```.
         ```sh
-        cd Individual_Filters&Techniques
+        cd Individual_Filters_Techniques
         ```
       
       <br>
