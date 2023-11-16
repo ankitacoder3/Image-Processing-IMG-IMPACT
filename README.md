@@ -4,8 +4,8 @@
 In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are used.
 
 
-
 <details>
+
   <summary style="color: red;">Table of Contents</summary>
 <li> <a href="#a1">Introduction</a></li>
 <li> <a href="#a2"> Prerequisites and Techstack</a></li>
@@ -75,7 +75,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 10_result.jpg
     │   │    └── IMG-IMPACT.png    #logo
     │   │ 
-    │   ├── Individual_Filters&Techniques/     # Folder2
+    │   ├── Individual_Filters_Techniques/     # Folder2
     │   │    ├── 1_ColourFilter.py
     │   │    ├── 2_GrayScale.py
     │   │    ├── 3_ImageReconstruction.py
@@ -196,25 +196,84 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     cd Image-Processing--IMG-IMPACT
     cd IMG-IMPACT
     ```
-<br>
+  <br>
 
-  3. Navigate to the ```'Individual_Filters&Technique' Directory``` to execute techniques and filters ```separately```.
+  3. Navigate to ```ANY of the Directories``` and ```execute the respective files``` present in that directory.
 
-     By opening any file in python idle and running it.
 
+
+      <br>
+
+     
+      i.  ***Navigation*** :
+          <br><br>
+           a. Navigate to  ```'Individual_Filters_Techniques' Directory``` to execute techniques and filters ```separately```.
+        ```sh
+        cd Individual_Filters_Techniques
+        ```
+      
+      <br>
+
+     b. Navigate to  ```'All_Filters_Combined' Directory``` to execute techniques and filters ```combined```.
+      ```sh
+      cd All_Filters_Combined
+      ```
+      
+      <br>
+      
+      c. Navigate to  ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
+      ```sh
+      cd Extra_Contents
+      ```
+      
+      <br>
+           
+     d. Navigate to  ```'Images' Directory``` to ```edit``` the images used.
+      ```sh
+      cd Images
+      ```
+      
+       <p align="right"><a href="#readme-top">Back to TOP</a></p> <br>
+      
+     ii.  ***Execution*** :
+
+     By opening ```any file``` in ```python idle``` or ```command prompt```, and running it.
+     
      <br>
      
-4. Navigate to the ```'All_Filters_Combined' Directory``` to execute the techniques and filters ```combined```.
-  
-   By opening any file in python idle and running it.
+     a. To execute any file from  ```'Individual_Filters&Technique' Directory```, type
+        ```sh
+        cd Individual_Filters&Technique
+        ```
+      
+      <br>
 
-   <br>
-   
- 5. Navigate to the ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
+     b. Navigate to  ```'All_Filters_Combined' Directory``` to execute techniques and filters ```combined```.
+      ```sh
+      cd All_Filters_Combined
+      ```
+      
+      <br>
+      
+      c. Navigate to  ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
+      ```sh
+      cd Extra_Contents
+      ```
+      
+      <br>
+           
+     d. Navigate to  ```'Images' Directory``` to ```edit``` the images used.
+      ```sh
+      cd Images
+      ```
+      
+     
+     <br>
+     
 
-    <br>
+     <br>
     
-    Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
+  Note- For some filters and techniques information may not be complete or it may not exist in the'Extra_Contents' Directory.
   
   
   
