@@ -243,7 +243,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
         python <filename>
         ```
 
-        Then follow the instructions, which appear on ```command prompt```.
+        Then ```follow the instructions```, which appear on ```command prompt```.
       
       <br>
 
@@ -252,7 +252,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
       python 1_ColourFilter.py
       ```
 
-      Then follow the instructions, which appear on ```command prompt```.
+      Then ```follow the instructions```, which appear on ```command prompt```.
       
       <br>
       
@@ -261,7 +261,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
       python IMG-IMPACT.py
       ```
 
-      Then follow the instructions, which appear on ```command prompt```.
+      Then ```follow the instructions```, which appear on ```command prompt```.
       
       <br>
     
