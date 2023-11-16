@@ -13,11 +13,11 @@ img = cv2.imread(r'../Images/6_scenary.jpg')
 # displaying the image using imshow() function of cv2
 # In this : 1st argument is name of the frame
 # 2nd argument is the image matrix
-cv2.imshow('original image',img)
+cv2.imshow('Original Image',img)
 print()
 # print shape of the image matrix
 # using shape attribute
-print("original image shape:",img.shape)
+print("Original Image Shape:",img.shape)
 
 # assigning number of rows, coulmns and
 # planes to the respective variables
@@ -63,9 +63,9 @@ resize_img[:,:,0] = resize_blue_plane
 resize_img[:,:,1] = resize_green_plane
 resize_img[:,:,2] = resize_red_plane
 
-cv2.imshow('resize image',resize_img)
+cv2.imshow('Resized Image',resize_img)
 
-print("resize image shape:",resize_img.shape)
+print("Resized Image Shape:",resize_img.shape)
 img=resize_img
 recon_img=img
 cv2.waitKey(0)

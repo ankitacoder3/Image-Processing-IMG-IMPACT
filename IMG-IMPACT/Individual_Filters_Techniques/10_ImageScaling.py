@@ -1,3 +1,4 @@
+
 import cv2
 
 import numpy as np
@@ -7,19 +8,19 @@ import numpy as np
 img = cv2.imread('../Images/10_pig.jpg')
   
 # Get number of pixel horizontally and vertically.
-
 (height, width) = img.shape[:2]
-  
-# Specify the size of image along with interploation methods.
 
-# cv2.INTER_AREA is used for shrinking, whereas cv2.INTER_CUBIC
-
-# is used for zooming.
-res = cv2.resize(img, (int(width / 2), int(height / 2)), interpolation = cv2.INTER_CUBIC)
+scaling_factor=4
+res = img[::scaling_factor, ::scaling_factor] #scaling
 
 #showing the images
-cv2.imshow('original image',img)
-cv2.imshow('scaled image',res)    
+cv2.imshow('Original Image',img)
+cv2.imshow('Scaled Image',res)   
+
+print('\nOriginal Image Shape:',img.shape)
+print('Scaled Image Shape:',res.shape)
+
+print('\nIt is scaled by:',1/scaling_factor)
 
 cv2.waitKey(0)
 

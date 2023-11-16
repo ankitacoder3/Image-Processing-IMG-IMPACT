@@ -65,9 +65,10 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 4_CroppedImage.jpg
     │   │    ├── 5_desktop.jpg
     │   │    ├── 6_scenary.jpg
-    │   │    ├── 7_8_emoji.png.png
+    │   │    ├── 7_8_emoji.png
     │   │    ├── 9_person.png
     │   │    ├── 10_pig.jpg
+    │   │    ├── 11_apple.jpg
     │   │    ├── <no.>_new_<any name>.jpg      # These files are the resultant images after running the files, present in the 'Individual_Filters_Techniques' Folder.
     │   │    ├── <no.>_fnew_<any name>.jpg      # These files are the resultant images after running the file, present in the 'All_Filters_Combined' Folder.
     │   │    └── IMG-IMPACT.png    #logo
@@ -79,11 +80,11 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 4_ImageCropping.py
     │   │    ├── 5_LinearFilter.py
     │   │    ├── 6_ImageResizing.py
-    │   │    ├── 7.py
-    │   │    ├── 8.py
+    │   │    ├── 7_ImageRotation.py
+    │   │    ├── 8_GaussianFilter.py
     │   │    ├── 9_MedianFilter.py
     │   │    ├── 10_ImageScaling.py
-    │   │    └── IMG-IMPACT.png   #logo
+    │   │    └── 11_ImageShearing.py
     │   │ 
     │   └── IMG-IMPACT.png   # Project Logo
     │   
