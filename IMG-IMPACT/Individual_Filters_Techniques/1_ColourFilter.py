@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open(r"Images/1_2_rover.jpg").convert("RGB")
+img = Image.open(r"../Images/1_2_rover.jpg").convert("RGB")
 
 width,height = img.size
 
@@ -51,13 +51,28 @@ enter your choice
 5 grey
 6 sepia
 '''
-
+flag=0
+u=00
 
 print(choice)
-no = int(input())
 
+n=input('Choice:')
+try:
+  no = int(n)
+except ValueError:
+  print('Invalid input given. Try again! \nEnter a number between 1-6.')
+  flag=2
+try:
+ if no==None and flag==0:
+            no=0
+            print('Invalid input given. Try again! \nEnter a number between 1-6.')
+            flag=1
+ elif (no<1 or no>6) and flag==0:
+            print('Invalid number given. Try again! \nEnter a number between 1-6.')
+            flag=1
+ elif flag==0:
 
-for py in range(height):
+  for py in range(height):
     for px in range(width):
         r,g,b = img.getpixel((px,py))
         if no==1:
@@ -73,8 +88,28 @@ for py in range(height):
         if no==6:
             pixels[px,py] = sepia(r,g,b)
 
-img.show()
-img.save(r"Images/1_new_filtering.jpg")
+  print("\nDefault name of new image is: '1_new_filtering.jpg' , if no input given. \n")
+  in_n=input("Enter name of new Image : 1_new_")
+
+  img.show()
+
+  if in_n==None:
+    #print('66',in_n)
+    img.save(r"../Images/1_new_filtering.jpg")
+    q='1_new_filtering.jpg'
+  else:
+    #print('33',in_n)
+    s="../Images/1_new_"+in_n+".jpg"
+    if s=="../Images/1_new_.jpg":
+      s='../Images/1_new_filtering.jpg'
+    img.save(s)
+    q="1_new_"+in_n+".jpg"
+  if q=="1_new_.jpg":
+     q='1_new_filtering.jpg'
+  print('Filtered image saved as: ',q)
+except NameError:
+  print('')
+
 
 
 

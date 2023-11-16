@@ -8,13 +8,13 @@ import numpy as np
 # read an image using imread() function of cv2
 # we have to  pass only the path of the image
 
-img = cv2.imread(r'Images/6_scenary.jpg')
+img = cv2.imread(r'../Images/6_scenary.jpg')
 
 # displaying the image using imshow() function of cv2
 # In this : 1st argument is name of the frame
 # 2nd argument is the image matrix
 cv2.imshow('original image',img)
-
+print()
 # print shape of the image matrix
 # using shape attribute
 print("original image shape:",img.shape)
@@ -66,3 +66,26 @@ resize_img[:,:,2] = resize_red_plane
 cv2.imshow('resize image',resize_img)
 
 print("resize image shape:",resize_img.shape)
+img=resize_img
+recon_img=img
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
+if img is not None and img.any():
+  print("\nDefault name of new image is: '6_new_resized.jpg' , if no input given. \n")
+  in_n=input("Enter name of new Image : 6_new_")
+
+
+  if in_n==None:
+    s="../Images/6_new_resized.jpg"
+    cv2.imwrite(s, recon_img)
+    q='6_new_resized.jpg'
+  else:
+    s="../Images/6_new_"+in_n+".jpg"
+    if s=="../Images/6_new_.jpg":
+      s='../Images/6_new_resized.jpg'
+    cv2.imwrite(s,recon_img)
+    q="6_new_"+in_n+".jpg"
+  if q=="6_new_.jpg":
+     q='6_new_resized.jpg'
+  print('Filtered image saved as: ',q)
