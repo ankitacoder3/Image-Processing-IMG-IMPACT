@@ -280,7 +280,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 <a name="a4"></a>
 ## Usage
 
-
+<br>
 
 * IMG-IMPACT application can ***transform the pictures***, given as input, into different variations of the same picture.
 
