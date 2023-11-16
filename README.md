@@ -53,26 +53,23 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     ├── IMG-IMPACT/           # Project Folder
     │   │              
     │   ├── All_Filters_Combined/              # Folder3
-    │   │    ├── IMG-IMPACT.py
-    │   │    └── IMG-IMPACT.png    #logo
-    │   │ 
+    │   │    └── IMG-IMPACT.py
+    │   │     
     │   ├── Extra_Contents/                    # Folder4
     │   │    ├── IMG-IMPACT_Slides.pdf
-    │   │    ├── IMG-IMPACT_Information.pdf
-    │   │    └── IMG-IMPACT.png    #logo
+    │   │    └── IMG-IMPACT_Information.pdf
     │   │ 
     │   ├── Images/                            # Folder1
     │   │    ├── 1_2_rover.jpg
-    │   │    ├── 1_new_filtering.jpg
     │   │    ├── 3_4_turtle.jpg
     │   │    ├── 4_CroppedImage.jpg
     │   │    ├── 5_desktop.jpg
     │   │    ├── 6_scenary.jpg
-    │   │    ├── 6_scenary1.jpg
     │   │    ├── 7_8_emoji.png.png
     │   │    ├── 9_person.png
     │   │    ├── 10_pig.jpg
-    │   │    ├── 10_result.jpg
+    │   │    ├── <no.>_new_<any name>.jpg      # These files are the resultant images after running the files, present in the 'Individual_Filters_Techniques' Folder.
+    │   │    ├── <no.>_fnew_<any name>.jpg      # These files are the resultant images after running the file, present in the 'All_Filters_Combined' Folder.
     │   │    └── IMG-IMPACT.png    #logo
     │   │ 
     │   ├── Individual_Filters_Techniques/     # Folder2
@@ -241,34 +238,33 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
      
      <br>
      
-     a. To execute any file from  ```'Individual_Filters&Technique' Directory```, type
+     a. To execute any file from command prompt, type
         ```sh
-        cd Individual_Filters&Technique
+        python <filename>
         ```
+
+        Then follow the instructions, which appear on ```command prompt```.
       
       <br>
 
-     b. Navigate to  ```'All_Filters_Combined' Directory``` to execute techniques and filters ```combined```.
+     b. For any file from  ```'Individual_Filters_Techniques' Directory```, say ```1_ColourFilter.py```, type
       ```sh
-      cd All_Filters_Combined
+      python 1_ColourFilter.py
       ```
+
+      Then follow the instructions, which appear on ```command prompt```.
       
       <br>
       
-      c. Navigate to  ```'Extra_Contents' Directory``` to find ```extra information``` about the filters and techniques.
+      c. For any file from  ```'All_Filters_Combined' Directory```, say ```IMG-IMPACT.py```, type
       ```sh
-      cd Extra_Contents
+      python IMG-IMPACT.py
       ```
+
+      Then follow the instructions, which appear on ```command prompt```.
       
       <br>
-           
-     d. Navigate to  ```'Images' Directory``` to ```edit``` the images used.
-      ```sh
-      cd Images
-      ```
-      
-     
-     <br>
+    
      
 
      <br>
