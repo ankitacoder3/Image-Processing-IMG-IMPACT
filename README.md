@@ -3,8 +3,9 @@
 
 In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are used.
 
+<br>
 
-<details>
+<details open>
 
   <summary style="color: red;">Table of Contents</summary>
 <li> <a href="#a1">Introduction</a></li>
