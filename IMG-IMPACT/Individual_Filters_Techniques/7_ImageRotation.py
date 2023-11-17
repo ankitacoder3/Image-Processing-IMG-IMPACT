@@ -1,12 +1,27 @@
 import cv2
 import math
 import numpy as np
+import matplotlib.pyplot as plt
 
 def saving(img, namestr, val):
-    print('\nDo you want to save', namestr, '?\n', namestr, 'is rotated by', val, 'degrees.')
+    print('\nDo you want to save',namestr, '?\n',namestr, 'is rotated by', val, 'degrees.')
     select = input('Enter: \n 1 - for yes \n 0 - for no\n')
 
     recon_img = img.copy()  # Ensure a copy of the image is made for saving purposes
+
+    if (val=="--"):
+            axes=img[0]
+            titles=img[1]
+            l=img[2]
+            fig, axes = plt.subplots(1, len(l), figsize=(15, 5))
+
+            for i, img in enumerate(l):
+                    axes[i].imshow(img, cmap='gray')
+                    axes[i].set_title(titles[i])
+                    axes[i].axis('off')
+            plt.tight_layout()
+            
+        
 
     if select == '1':
         if img is not None and img.any():
@@ -15,13 +30,19 @@ def saving(img, namestr, val):
 
             if in_n == "":
                 s = f"../Images/7_new_{namestr}.jpg"
-                cv2.imwrite(s, recon_img)
+                if(val=="--"):
+                     plt.savefig(s)
+                else:
+                    cv2.imwrite(s, recon_img)
                 q = f"7_new_{namestr}.jpg"
             else:
                 s = f"../Images/7_new_{in_n}.jpg"
                 if s == f"../Images/7_new_.jpg":
                     s = f"../Images/7_new_{namestr}.jpg"
-                cv2.imwrite(s, recon_img)
+                if(val=="--"):
+                    plt.savefig(s)
+                else:
+                    cv2.imwrite(s, recon_img)
                 q = f"7_new_{in_n}.jpg"
                 
             if q == f"7_new_.jpg":
@@ -46,11 +67,45 @@ def rotation():
             cv2.imshow("rotated_image1",rotated_image1)
             cv2.imshow("rotated_image2",rotated_image2)
             cv2.imshow("rotated_image3",rotated_image3)
+                        
+                        
+            fig, axes = plt.subplots(1, 4, figsize=(12, 4))
+            # Disable axis
+            for ax in axes:
+                ax.axis('off')
+
+            # Plot original image
+            axes[0].imshow(image)
+            axes[0].set_title('Original Image')
+
+            # Plot 
+            axes[1].imshow(rotated_image1)
+            axes[1].set_title('Rotation via 180 deg')
+
+            # Plot 
+            axes[2].imshow(rotated_image2)
+            axes[2].set_title('Rotation via 90 deg')
+
+
+            # Plot 
+            axes[3].imshow(rotated_image3)
+            axes[3].set_title('Rotation via 40 deg')
+
+            plt.tight_layout()
+            plt.show()
+
+
             cv2.waitKey(0)
             cv2.destroyAllWindows()
             saving(rotated_image1,"rotated_image1",v1)
             saving(rotated_image2,"rotated_image2",v2)
             saving(rotated_image3,"rotated_image3",v3)
+
+
+            titles=['Original Image','Rotation via 180 deg','Rotation via 90 deg', 'Rotation via 40 deg']
+            l=[image,rotated_image1,rotated_image2,rotated_image3]
+
+            saving([axes, titles,l],"Combined_Images", "--")
 
 def naive_image_rotate(image, degrees, option='same'):
     '''

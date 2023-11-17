@@ -1,6 +1,5 @@
 import numpy as np
 import cv2 
-import argparse
 import matplotlib.pyplot as plt
 import math
 from PIL import Image
@@ -9,8 +8,9 @@ from matplotlib.image import imread
 
 
 #1-Colour Filter
-def colorfilter():
-    img = Image.open(r"../Images/1_2_rover.jpg").convert("RGB")
+def colorfilter(path):
+    img = Image.open(path).convert("RGB")
+    img.show()
     width,height = img.size
 
     pixels = img.load()
@@ -52,7 +52,7 @@ def colorfilter():
         return(newr,newg,newb)
 
     choice = '''
-    enter your choice
+    Enter your choice :
     1 red
     2 darkpink
     3 skyblue
@@ -60,35 +60,51 @@ def colorfilter():
     5 grey
     6 sepia
     '''
+    flag=0
 
 
     print(choice)
-    no = int(input())
 
+    n=input('Choice: ')
+    try:
+        no = int(n)
+    except ValueError:
+        print('Invalid input given. Try again! \nEnter a number between 1-6.')
+        flag=2
+    if no==None and flag==0:
+                no=0
+                print('Invalid input given. Try again! \nEnter a number between 1-6.')
+                flag=1
+    elif (no<1 or no>6) and flag==0:
+                print('Invalid number given. Try again! \nEnter a number between 1-6.')
+                flag=1
+    elif flag==0:
 
-    for py in range(height):
-        for px in range(width):
-            r,g,b = img.getpixel((px,py))
-            if no==1:
-                pixels[px,py] = red(r,g,b)
-            if no==2:
-                pixels[px,py] = darkpink(r,g,b)
-            if no==3:
-                pixels[px,py] = skyblue(r,g,b)
-            if no==4:
-                pixels[px,py] = lemongreen(r,g,b)
-            if no==5:
-                pixels[px,py] = grey(r,g,b)
-            if no==6:
-                pixels[px,py] = sepia(r,g,b)
-
-    img.show()
-    img.save(r"../Images/1_new_filtering.jpg")
+        for py in range(height):
+            for px in range(width):
+                r,g,b = img.getpixel((px,py))
+                if no==1:
+                    pixels[px,py] = red(r,g,b)
+                if no==2:
+                    pixels[px,py] = darkpink(r,g,b)
+                if no==3:
+                    pixels[px,py] = skyblue(r,g,b)
+                if no==4:
+                    pixels[px,py] = lemongreen(r,g,b)
+                if no==5:
+                    pixels[px,py] = grey(r,g,b)
+                if no==6:
+                    pixels[px,py] = sepia(r,g,b)
+        img.show()
+    return img
 
 
 #2-Gray Scaling
-def grayscale():
-    input_image = imread(r"../Images/1_2_rover.jpg")
+def grayscale(img):
+    input_image = imread(img)
+    inputimage = (input_image * 255).astype(np.uint8)
+    pil_image = Image.fromarray(inputimage)
+    pil_image.show()
     r,g,b = input_image[:,:,0],input_image[:,:,1],input_image[:,:,2]
 
     gamma = 1.04
@@ -105,13 +121,14 @@ def grayscale():
 
     fig.show()
     plt.show()
+    return grayscale_image
 
 
 
 #3-Image Reconstruction
 
-def reconstruction():
-    img = Image.open('../Images/3_4_turtle.jpg')
+def reconstruction(img):
+    img = Image.open(img)
     img = np.mean(img,2)
 
     U,s,V = np.linalg.svd(img)
@@ -133,7 +150,6 @@ def reconstruction():
     ax[1].axis('off')
     ax[1].set_title(f'Reconstructed n = {n}')
 
-    plt.show()
     m=100
     for i in range(0, m):
         S[i,i] = s[i]
@@ -151,13 +167,14 @@ def reconstruction():
     ax[1].set_title(f'Reconstructed n = {m}')  
 
     plt.show()
+    return recon_img
 
 
 
 #4-Image Cropping
-def crop():
+def crop(path):
     
-    img = cv2.imread('../Images/3_4_turtle.jpg')
+    img = cv2.imread(path)
 
     print(img.shape) # Print image shape
 
@@ -171,33 +188,37 @@ def crop():
 
     cv2.imshow("cropped", cropped_image)
 
-    # Save the cropped image
-
-    cv2.imwrite("../Images/4_CroppedImage.jpg", cropped_image)
+    
     cv2.waitKey(0)
 
     cv2.destroyAllWindows()
+    return cropped_image
+
 
 
 
 #5-Linear Filter
-def linearfilter():
+def linearfilter(path):
     window_name = 'filter2D Demo'
-    
-    imageName = '../Images/5_desktop.jpg'
-    # Loads an image
-    src = cv2.imread(cv2.samples.findFile(imageName), cv2.IMREAD_COLOR)
-    # Check if image is loaded fine
+    img = path
+
+    src = cv2.imread(cv2.samples.findFile(img), cv2.IMREAD_COLOR)
     if src is None:
-        print ('Error opening image!')
-        print ('Usage: filter2D.py [image_name -- default lena.jpg] \n')
+        print('Error opening image!')
+        print('Usage: filter2D.py [image_name -- default lena.jpg] \n')
         return -1
     
     ddepth = -1
-    
     ind = 0
+    round_counter = 0  # Counter to keep track of rounds
+    display_time = 2000  # Display time in milliseconds (3 seconds)
+    delay_time = 70  # Delay time for displaying image (medium speed)
+
+    start_time = cv2.getTickCount()
+
+    cv2.namedWindow(window_name)
+
     while True:
-        
         kernel_size = 3 + 2 * (ind % 5)
         kernel = np.ones((kernel_size, kernel_size), dtype=np.float32)
         kernel /= (kernel_size * kernel_size)
@@ -205,17 +226,25 @@ def linearfilter():
         dst = cv2.filter2D(src, ddepth, kernel)
         
         cv2.imshow(window_name, dst)
-        c = cv2.waitKey(1000)
-        if ind == 10:
+        c = cv2.waitKey(delay_time)
+        elapsed_time = (cv2.getTickCount() - start_time) / cv2.getTickFrequency() * 1000  # Calculate elapsed time in milliseconds
+
+        if elapsed_time >= display_time:  # Stop and close window after 3 seconds
             break
+
+        if ind == 10:
+            round_counter += 1  # Increment round counter after 10 iterations
+            #ind = 0  # Reset iteration counter for the next round
         ind += 1
-    return 0
+
+    cv2.destroyAllWindows()
+    return dst
 
 
 
 #6-Image Resizing
-def resize():
-    img = cv2.imread('../Images/6_scenary.jpg')
+def resize(path):
+    img = cv2.imread(path)
 
     # displaying the image using imshow() function of cv2
     # In this : 1st argument is name of the frame
@@ -275,32 +304,63 @@ def resize():
     print("resize image shape:",resize_img.shape)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+    return resize_img
 
 
 
 #7-Image Rotation
-def rotation():
-            image = cv2.imread('../Images/7_8_emoji.png')
-            rotated_image = naive_image_rotate(image,180,'full')
-            cv2.imshow("original image", image)
-            cv2.imshow("rotated image",rotated_image)
+def rotation(path):
+            image = cv2.imread(path)
+            cv2.imshow("img",image)
+            v1=180
+            v2=90
+            v3=40
+            rotated_image1 = naive_image_rotate(image,v1,'full')
+            rotated_image2 = naive_image_rotate(image,v2,'full')
+            rotated_image3 = naive_image_rotate(image,v3,'full')
+            '''cv2.imshow("original image", image)
+            cv2.imshow("rotated_image1",rotated_image1)
+            cv2.imshow("rotated_image2",rotated_image2)
+            cv2.imshow("rotated_image3",rotated_image3)
             cv2.waitKey(0)
-            cv2.destroyAllWindows()
+            cv2.destroyAllWindows()'''
+
+            fig, axes = plt.subplots(1, 4, figsize=(12, 4))
+            # Disable axis
+            for ax in axes:
+                ax.axis('off')
+
+            # Plot original image
+            axes[0].imshow(image)
+            axes[0].set_title('Original Image')
+
+            # Plot 
+            axes[1].imshow(rotated_image1)
+            axes[1].set_title('Rotation via 180 deg')
+
+            # Plot 
+            axes[2].imshow(rotated_image2)
+            axes[2].set_title('Rotation via 90 deg')
+
+
+            # Plot 
+            axes[3].imshow(rotated_image3)
+            axes[3].set_title('Rotation via 40 deg')
+
+            # Adjust the layout to prevent overlapping
+            plt.tight_layout()
+
+            # Show the plot
+            plt.show()
+
+            titles=['Original Image','Rotation via 180 deg','Rotation via 90 deg', 'Rotation via 40 deg']
+            l=[image,rotated_image1,rotated_image2,rotated_image3]
+
+            #concatenated_image = cv2.hconcat([rotated_image1, rotated_image2, rotated_image3])
+            return [axes, titles,l]
 
 def naive_image_rotate(image, degrees, option='same'):
-    '''
-    This function rotates the image around its center by amount of degrees
-    provided. The rotated image can be of the same size as the original image
-    or it can show the full image.
-    
-    inputs: image: input image (dtype: numpy-ndarray)
-            degrees: amount of rotation in degrees (e.g., 45,90 etc.)
-            option: string variable for type of rotation. It can take two values
-            'same': the rotated image will have same size as the original image
-                    It is default value for this variable.
-            'full': the rotated image will show the full rotation of original
-                    image thus the size may be different than original.
-    '''
+
     # First we will convert the degrees into radians
     rads = math.radians(degrees)
     # Finding the center point of the original image
@@ -333,91 +393,125 @@ def naive_image_rotate(image, degrees, option='same'):
 
             if (x>=0 and y>=0 and x<image.shape[0] and  y<image.shape[1]):
                 rot_img[i,j,:] = image[x,y,:]
-    return rot_img 
+    return rot_img
 
 
 
 #8-gaussian Filter
-def gaussian_filter():
-            image = cv2.imread('../Images/7_8_emoji.png')
-            gaussian_blur(image, 5, verbose=True)
+def gauss_fil(path):
+    l=[]
+    v=[]
+    def show(l, v):
+        fig, axes = plt.subplots(1, len(l), figsize=(15, 5))
+        titles = [
+            "Kernel ({}X{})".format(v[0], v[0]),
+            "Image",
+            "Padded Image",
+            "Output Image using {}X{} Kernel".format(v[1], v[2])
+        ]
 
-def convolution(image, kernel, average=False, verbose=False):
-    if len(image.shape) == 3:
-        print("Found 3 Channels : {}".format(image.shape))
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        print("Converted to Gray Channel. Size : {}".format(image.shape))
-    else:
-        print("Image Shape : {}".format(image.shape))
- 
-    print("Kernel Shape : {}".format(kernel.shape))
- 
-    if verbose:
+        for i, img in enumerate(l):
+            axes[i].imshow(img, cmap='gray')
+            axes[i].set_title(titles[i])
+            axes[i].axis('off')
+
+        plt.tight_layout()
+        plt.show()
+        return [axes,titles,l]
+        
+
+    def gaussian_filter(path):
+                image = cv2.imread(path)
+                gaussian_blur(image, 5, verbose=False)
+                im=show(l,v)
+                return im
+
+    def convolution(image, kernel, average=False, verbose=False):
+        if len(image.shape) == 3:
+            print("\nFound 3 Channels : {}".format(image.shape))
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            print("Converted to Gray Channel. Size : {}".format(image.shape))
+        else:
+            print("Image Shape : {}".format(image.shape))
+    
+        print("Kernel Shape : {}".format(kernel.shape))
+
         plt.imshow(image, cmap='gray')
         plt.title("Image")
         plt.show()
- 
-    image_row, image_col = image.shape
-    kernel_row, kernel_col = kernel.shape
- 
-    output = np.zeros(image.shape)
- 
-    pad_height = int((kernel_row - 1) / 2)
-    pad_width = int((kernel_col - 1) / 2)
- 
-    padded_image = np.zeros((image_row + (2 * pad_height), image_col + (2 * pad_width)))
- 
-    padded_image[pad_height:padded_image.shape[0] - pad_height, pad_width:padded_image.shape[1] - pad_width] = image
- 
-    if verbose:
-        plt.imshow(padded_image, cmap='gray')
-        plt.title("Padded Image")
-        plt.show()
- 
-    for row in range(image_row):
-        for col in range(image_col):
-            output[row, col] = np.sum(kernel * padded_image[row:row + kernel_row, col:col + kernel_col])
-            if average:
-                output[row, col] /= kernel.shape[0] * kernel.shape[1]
- 
-    print("Output Image size : {}".format(output.shape))
- 
-    if verbose:
-        plt.imshow(output, cmap='gray')
-        plt.title("Output Image using {}X{} Kernel".format(kernel_row, kernel_col))
-        plt.show()
- 
-    return output
 
-def dnorm(x, mu, sd):
-    return 1 / (np.sqrt(2 * np.pi) * sd) * np.e ** (-np.power((x - mu) / sd, 2) / 2)
- 
- 
-def gaussian_kernel(size, sigma=1, verbose=False):
-    kernel_1D = np.linspace(-(size // 2), size // 2, size)
-    for i in range(size):
-        kernel_1D[i] = dnorm(kernel_1D[i], 0, sigma)
-    kernel_2D = np.outer(kernel_1D.T, kernel_1D.T)
- 
-    kernel_2D *= 1.0 / kernel_2D.max()
- 
-    if verbose:
-        plt.imshow(kernel_2D, interpolation='none', cmap='gray')
-        plt.title("Kernel ( {}X{} )".format(size, size))
-        plt.show()
- 
-    return kernel_2D
- 
- 
-def gaussian_blur(image, kernel_size, verbose=False):
-    kernel = gaussian_kernel(kernel_size, sigma=math.sqrt(kernel_size), verbose=verbose)
-    return convolution(image, kernel, average=True, verbose=verbose)
+        if verbose:
+            plt.imshow(image, cmap='gray')
+            plt.title("Image")
+            plt.show()
+        l.append(image)
+    
+        image_row, image_col = image.shape
+        kernel_row, kernel_col = kernel.shape
+    
+        output = np.zeros(image.shape)
+    
+        pad_height = int((kernel_row - 1) / 2)
+        pad_width = int((kernel_col - 1) / 2)
+    
+        padded_image = np.zeros((image_row + (2 * pad_height), image_col + (2 * pad_width)))
+    
+        padded_image[pad_height:padded_image.shape[0] - pad_height, pad_width:padded_image.shape[1] - pad_width] = image
+    
+        if verbose:
+            plt.imshow(padded_image, cmap='gray')
+            plt.title("Padded Image")
+            plt.show()
+        l.append(padded_image)
+    
+        for row in range(image_row):
+            for col in range(image_col):
+                output[row, col] = np.sum(kernel * padded_image[row:row + kernel_row, col:col + kernel_col])
+                if average:
+                    output[row, col] /= kernel.shape[0] * kernel.shape[1]
+    
+        print("Output Image size : {}".format(output.shape))
+    
+        if verbose:
+            plt.imshow(output, cmap='gray')
+            plt.title("Output Image using {}X{} Kernel".format(kernel_row, kernel_col))
+            plt.show()
+        l.append(output)
+        v.append(kernel_row)
+        v.append(kernel_col)
+    
+        return output
 
-
+    def dnorm(x, mu, sd):
+        return 1 / (np.sqrt(2 * np.pi) * sd) * np.e ** (-np.power((x - mu) / sd, 2) / 2)
+    
+    
+    def gaussian_kernel(size, sigma=1, verbose=False):
+        kernel_1D = np.linspace(-(size // 2), size // 2, size)
+        for i in range(size):
+            kernel_1D[i] = dnorm(kernel_1D[i], 0, sigma)
+        kernel_2D = np.outer(kernel_1D.T, kernel_1D.T)
+    
+        kernel_2D *= 1.0 / kernel_2D.max()
+    
+        if verbose:
+            plt.imshow(kernel_2D, interpolation='none', cmap='gray')
+            plt.title("Kernel ( {}X{} )".format(size, size))
+            plt.show()
+        l.append(kernel_2D)
+        v.append(size)
+    
+        return kernel_2D
+    
+    
+    def gaussian_blur(image, kernel_size, verbose=False):
+        kernel = gaussian_kernel(kernel_size, sigma=math.sqrt(kernel_size), verbose=verbose)
+        return convolution(image, kernel, average=True, verbose=verbose)
+    im=gaussian_filter(path)
+    return im
 
 #9-Median Filter
-def median_filter():
-    path = '../Images/9_person.png'
+def median_filter(path):
     img = cv2.imread(path)
 
     #using medinaBlur() function to remove the noise from the given image
@@ -435,14 +529,14 @@ def median_filter():
     cv2.waitKey(0)
 
     cv2.destroyAllWindows
+    return median
 
 
 
 #10-Image Scaling
-def scaling():
-    try:
+def scaling(path):
         # Read image from disk.
-        img = cv2.imread('../Images/10_pig.jpg')
+        img = cv2.imread(path)
     
         # Get number of pixel horizontally and vertically.
 
@@ -466,17 +560,147 @@ def scaling():
         cv2.imshow('scaled image',res)   
         cv2.waitKey(0)
         cv2.destroyAllWindows()
-  
-    except IOError:
+        return res
+      
 
-        print ('Error while reading files !!!')        
+#11-Image shearing
+def shearing(path):
+	# read the input image
+    img = cv2.imread(path)
+    # convert from BGR to RGB so we can plot using matplotlib
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    # get the image shape
+    rows, cols, dim = img.shape
+
+    # transformation matrix for Shearing
+
+    # shearing applied to x-axis
+    #M = np.float32([[1, 0.5, 0],
+    # [0, 1 , 0],
+    # [0, 0 , 1]])
+
+    # shearing applied to y-axis
+    M = np.float32([[1, 0.5, 0],
+    [0, 1, 0],
+    [0, 0, 1]])
+
+    # apply a perspective transformation to the image 
+    sheared_img = cv2.warpPerspective(img,M,(int(cols*1.5),int(rows*1.5)))
 
 
+    fig, axes = plt.subplots(1, 2, figsize=(8, 4))
+
+    # Disable axis
+    for ax in axes:
+        ax.axis('off')
+
+    # Plot original image
+    axes[0].imshow(img)
+    axes[0].set_title('Original Image')
+
+    # Plot sheared image
+    axes[1].imshow(sheared_img)
+    axes[1].set_title('Sheared Image')
+
+    # Adjust the layout to prevent overlapping
+    plt.tight_layout()
+
+    # Show the plot
+    plt.show()
+    return sheared_img
+
+
+def select_image():
+    print("\nSELECT YOUR IMAGE")
+    print("a) 1_2_rover.jpg")           
+    print("b) 3_4_turtle.jpg")
+    print("c) 5_desktop.jpg ")      
+    print("d) 6_scenary.jpg ")       
+    print("e) 7_8_emoji.png")
+    print("f) 9_person.png")
+    print("g) 10_pig.jpg ")
+    print("h) 11_apple.jpg ")
+    print("i) IMG-IMPACT.png")
+
+    choice=input("\nENTER SELECTION (case-sensitive): ")
+
+    if choice=='a':
+            p="1_2_rover.jpg"
+    elif choice=='b':
+            p="3_4_turtle.jpg"
+    elif choice=='c':
+            p="5_desktop.jpg"
+    elif choice=='d':
+            p="6_scenary.jpg"
+    elif choice=='e':
+            p="7_8_emoji.png"
+    elif choice=='f':
+            p="9_person.png"
+    elif choice=='g':
+            p="10_pig.jpg"
+    elif choice=='h':
+            p="11_apple.jpg"
+
+    elif choice=='i':
+            p="IMG-IMPACT.png"
+    else:
+            print('Invalid Selection! Default image selected...')
+            p="IMG-IMPACT.png"
+
+    path='../Images/'+p
+    return path
+
+def save_img(img,val,v):
+    c=input('\nDo you want to save the filtered or editted image?\nEnter: \n 1 - for yes \n 0 - for no\nSELECTION: ')
+    v=str(v)
+
+    if c=='1':
+            
+            print("\nDefault name of new image is: ",v,"_fnew_editted.jpg' , if no input given. \n")
+            print("Enter name of new Image : ",v,"_fnew_")
+            in_n=input('')
+            s="../Images/"+v+"_fnew_"+in_n+".jpg"
+            if s=="../Images/"+v+"_fnew_.jpg":
+                    s='../Images/'+v+'_fnew_editted.jpg'
+            q=v+"_fnew_"+in_n+".jpg"
+            if q==v+"_fnew_.jpg":
+                q=v+'_fnew_editted.jpg'
+
+            if val==1:
+                img.save(s)
+            elif val==2:
+                plt.imsave(s, img, cmap='gray')
+            elif val==3:
+                plt.imsave(s, img)
+            elif val==4:
+                cv2.imwrite(s, img)
+            elif val==5:
+                axes=img[0]
+                titles=img[1]
+                l=img[2]
+                fig, axes = plt.subplots(1, len(l), figsize=(15, 5))
+
+                for i, img in enumerate(l):
+                    axes[i].imshow(img, cmap='gray')
+                    axes[i].set_title(titles[i])
+                    axes[i].axis('off')
+                plt.tight_layout()
+                plt.savefig(s)
+                           
+            print('Filtered image saved as: ',q)
+
+    elif c=='0':
+        print('\nYou have selected not save the previous image.')
+
+    else:
+        print('\nInvalid Selection...Try Again.')
+    
 
 
 if __name__=='__main__':
     while True:
-        print("\nMenu Driven Program")
+        print("\n\nMenu Driven Program")
         print("1.Colour Filter") 
         print("2.Gray Scaling") 
         print("3.Image Reconstruction") 
@@ -487,29 +711,67 @@ if __name__=='__main__':
         print("8.Gaussian Filter") 
         print("9.Median Filter") 
         print("10.Image Scaling") 
-        print("11.Exit")
-        choice=int(input("Enter your choice:"))
+        print("11.Image Shearing")
+        print("12.Exit")
+        choice=int(input("\nENTER YOUR CHOICE: "))
         if choice==1:
-            colorfilter()
+            p=select_image()
+            print("\nCOLOUR FILTER\n")
+            i=colorfilter(p)
+            save_img(i,1,1)
         elif choice==2:
-            grayscale()
+            p=select_image()
+            print("\nGRAY SCALING\n") 
+            i=grayscale(p)
+            save_img(i,2,2)
         elif choice==3:
-            reconstruction()
+            p=select_image()
+            print("\nIMAGE RECONSTRUCTION\n") 
+            i=reconstruction(p)
+            save_img(i,3,3)
         elif choice==4:
-            crop()
+            p=select_image()
+            print("\nIMAGE CROPPING\n") 
+            i=crop(p)
+            save_img(i,4,4)
         elif choice==5:
-            linearfilter()
+            p=select_image()
+            print("\nLINEAR FILTER\n") 
+            i=linearfilter(p)
+            save_img(i,4,5)
         elif choice==6:
-            resize()
+            p=select_image()
+            print("\nIMAGE RESIZING\n") 
+            i=resize(p)
+            save_img(i,4,6)
         elif choice==7:
-            rotation()
+            p=select_image()
+            print("\nIMAGE ROTATION\n")
+            i=rotation(p)
+            save_img(i,5,7)
         elif choice==8:
-            gaussian_filter()
+            p=select_image()
+            print("\nGAUSSIAN FILTER\n") 
+            i=gauss_fil(p)
+            
+            save_img(i,5,8)
         elif choice==9:
-            median_filter()
+            p=select_image()
+            print("\nMEDIAN FILTER\n") 
+            i=median_filter(p)
+            save_img(i,4,9)
         elif choice==10:
-            scaling()
+            p=select_image()
+            print("\nIMAGE SCALING\n") 
+            i=scaling(p)
+            save_img(i,4,10)
         elif choice==11:
+            p=select_image()
+            print("\nIMAGE SHEARING\n")
+            i=shearing(p)
+            save_img(i,3,11)
+        elif choice==12:
+            print("\nEXITING APPLICATION!\n")
             break
         else:
-            print("Wrong Choice")
+            print("Invalid Choice! Try again...")

@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-def save_filtered_image(image, filename):
+def save_filtered_image(image):
     if image is not None and image.any():
         print("\nDefault name of the new image is: '5_new_linearfilter.jpg', if no input given.\n")
         in_n = input("Enter name of the new Image: 5_new_")
@@ -61,7 +61,7 @@ def main():
         ind += 1
 
     cv.destroyAllWindows()
-    save_filtered_image(dst, img)
+    save_filtered_image(dst)
 
 if __name__ == "__main__":
     main()

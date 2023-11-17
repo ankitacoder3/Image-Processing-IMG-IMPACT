@@ -43,7 +43,7 @@ def sepia(r,g,b):
     return(newr,newg,newb)
 
 choice = '''
-enter your choice
+Enter your choice :
 1 red
 2 darkpink
 3 skyblue
@@ -52,7 +52,7 @@ enter your choice
 6 sepia
 '''
 flag=0
-u=00
+
 
 print(choice)
 

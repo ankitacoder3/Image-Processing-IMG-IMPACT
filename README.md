@@ -10,6 +10,7 @@ In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are
 <li> <a href="#a1">Introduction</a></li>
 <li> <a href="#a2"> Prerequisites and Techstack</a></li>
 <li> <a href="#a3"> Steps for Execution </a></li>
+<li>  <a href="#a5">Screenshots</a></li>
 <li>  <a href="#a4">Usage</a></li>
 <a href="#end"><u><i>Skip to END...</i></u></a>
 </details>
@@ -274,6 +275,23 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   
   
   
+  <p align="right"><a href="#readme-top">Back to TOP</a></p>
+  </br>
+   </br>
+
+   <a name="a5"></a> 
+## Screenshots
+
+  ![Alt text](image.png)
+
+  ![Alt text](image-1.png)
+
+  ![Alt text](image-2.png)
+
+  ![Alt text](image-3.png)
+
+  ![Alt text](image-4.png)
+
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
    </br>

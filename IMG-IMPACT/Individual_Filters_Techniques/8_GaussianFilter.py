@@ -20,7 +20,22 @@ def show(l, v):
         axes[i].axis('off')
 
     plt.tight_layout()
+    plt.show()
     
+    fig, axes = plt.subplots(1, len(l), figsize=(15, 5))
+    titles = [
+        "Kernel ({}X{})".format(v[0], v[0]),
+        "Image",
+        "Padded Image",
+        "Output Image using {}X{} Kernel".format(v[1], v[2])
+    ]
+
+    for i, img in enumerate(l):
+        axes[i].imshow(img, cmap='gray')
+        axes[i].set_title(titles[i])
+        axes[i].axis('off')
+
+    plt.tight_layout()
     
 
     if img is not None and img.any():
@@ -43,7 +58,6 @@ def show(l, v):
             if q=="8_new_.jpg":
                 q='8_new_gaussianfilter.jpg'
             print('Filtered image saved as: ',q)
-            plt.show()
     
 
 def gaussian_filter():

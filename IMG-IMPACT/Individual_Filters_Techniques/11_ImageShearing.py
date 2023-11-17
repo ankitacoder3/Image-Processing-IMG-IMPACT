@@ -29,13 +29,6 @@ M = np.float32([[1, 0.5, 0],
 sheared_img = cv2.warpPerspective(img,M,(int(cols*1.5),int(rows*1.5)))
 
 
-
-
-
-#compare = np.concatenate((img, sheared_img), axis=1) 
-#cv2.imshow('Image Sheared', compare)
-
-# Display images using subplots
 fig, axes = plt.subplots(1, 2, figsize=(8, 4))
 
 # Disable axis
