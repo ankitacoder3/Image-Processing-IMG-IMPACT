@@ -3,6 +3,7 @@
 
 In the project ```IMG-IMPACT``` several    ```Image Processing Techniques``` are used.
 
+<br>
 
 <details open>
 
