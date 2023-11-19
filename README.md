@@ -300,7 +300,6 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 <br>
 <p align="right"><a href="#readme-top">Back to TOP</a></p>
-<br>
 
   * Select ***any image*** of your choice
 
