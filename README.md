@@ -285,7 +285,8 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   ![Alt text](image.png)
 
-  ![Alt text](image-1.png)
+  ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/f0afd5ed-9aba-4be3-9232-d46eea54ac8d)
+
 
   ![Alt text](image-2.png)
 
