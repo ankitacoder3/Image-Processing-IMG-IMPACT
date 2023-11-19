@@ -283,7 +283,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
    <a name="a5"></a> 
 ## Screenshots
 
-
+<br>
 
 
   * All images before and ***after using IMG-IMPACT***
@@ -291,27 +291,29 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/1f99828b-e6bb-4c3e-8260-37a794cfb734)
 
 
-
+<br>
 
 
   * Select ***any filter or technique***  of your choice
 
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/f0afd5ed-9aba-4be3-9232-d46eea54ac8d)
 
-
+<br>
+<p align="right"><a href="#readme-top">Back to TOP</a></p>
+<br>
 
   * Select ***any image*** of your choice
 
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/014f3e57-1455-4f71-85d9-f792d1992c17)
 
-
+<br>
 
   * Choose if you ***want to save images*** or not
 
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/d865cec1-ad34-4e31-99d5-f6e505e9e7eb)
 
 
-
+<br>
 
   * Choose if you ***want to name the filtered images***
 
