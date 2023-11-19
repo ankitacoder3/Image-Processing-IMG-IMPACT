@@ -283,16 +283,18 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
    <a name="a5"></a> 
 ## Screenshots
 
-  ![Alt text](image.png)
+  * All images before and after using IMG-IMPACT
+    
+  ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/1f99828b-e6bb-4c3e-8260-37a794cfb734)
 
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/f0afd5ed-9aba-4be3-9232-d46eea54ac8d)
 
+  ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/014f3e57-1455-4f71-85d9-f792d1992c17)
 
-  ![Alt text](image-2.png)
+  ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/d865cec1-ad34-4e31-99d5-f6e505e9e7eb)
 
-  ![Alt text](image-3.png)
+  ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/c15ab7de-4d19-4b15-bbe6-299657546903)
 
-  ![Alt text](image-4.png)
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
