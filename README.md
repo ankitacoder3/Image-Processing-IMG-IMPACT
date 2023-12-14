@@ -71,8 +71,10 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 9_person.png
     │   │    ├── 10_pig.jpg
     │   │    ├── 11_apple.jpg
-    │   │    ├── <no.>_new_<any name>.jpg      # These files are the resultant images after running the files, present in the 'Individual_Filters_Techniques' Folder.
-    │   │    ├── <no.>_fnew_<any name>.jpg      # These files are the resultant images after running the file, present in the 'All_Filters_Combined' Folder.
+    │   │    ├── <no.>_new_<any name>.jpg      
+    │   │          # These files are the resultant images after running the files, present in the 'Individual_Filters_Techniques' Folder.
+    │   │    ├── <no.>_fnew_<any name>.jpg      
+    │   │          # These files are the resultant images after running the file, present in the 'All_Filters_Combined' Folder.
     │   │    └── IMG-IMPACT.png    #logo
     │   │ 
     │   ├── Individual_Filters_Techniques/     # Folder2
