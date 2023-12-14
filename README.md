@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 # Image-Processing--IMG-IMPACT
 
-In the project ```IMG-IMPACT```, several    ```Image Processing Techniques``` are used, to ```<i> **Impact the Images** </i>```
+In the project ```IMG-IMPACT```, several    ```Image Processing Techniques``` are used, to ````Impact the Images````
 
 <br>
 
