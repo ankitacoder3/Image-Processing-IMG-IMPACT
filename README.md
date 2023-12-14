@@ -141,7 +141,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   * Libraries :
 
-    
+
     * OpenCV or cv2
     * Pillow or PIL
     * NumPy
@@ -154,7 +154,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   * Concepts :
     <details>
-    <summary color= blue ><b><i>Linear transformation, SVD, Fourier transformations</i></b></summary>
+    <summary color= blue ><b><i style="color: blue;">Linear transformation, SVD, Fourier transformations</i></b></summary>
       
     
       * **Linear transformation** -
