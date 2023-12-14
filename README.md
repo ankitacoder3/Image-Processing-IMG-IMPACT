@@ -101,15 +101,24 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 
 
-### <b>Features :</b>
+### <b>Underlying concepts / theory :</b>
 
-  - In **IMG-IMPACT** project ***Image Processing*** techniques are implemented.
-      
-  - Image processing involves ***manipulating images*** at a time and extracting useful insights from them.
-      
-  - Image can be represented as a ***grid of n x n small pieces***, which are called *pixels*.
-      
-  - If we can **assign numbers** to each colour, then, the grid of pixels can be represented as a ***numerical matrix***.
+  1.  **Inclusion of Image Processing Techniques**
+     
+      The project ```IMG-IMPACT``` involves the implementation of ```Image Processing Techniques```.
+
+  2.  **Manipulation of Images and Extraction of Insights**
+
+      Image processing entails the ```manipulation of images```to extract ```useful insights``` from them.
+
+  3.  **Representation of Images as Grids of Pixels**
+
+      Images can be represented as a ```grid of n x n small pieces```, which are called ```pixels```.
+
+  4.  **Numerical Representation of Image Pixels**
+ 
+      If we can ```assign numbers to each colour```, then, the grid of pixels can be represented as a ```numerical matrix```.
+    
  ###
 ###
 
