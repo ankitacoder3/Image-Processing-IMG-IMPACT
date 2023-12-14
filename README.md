@@ -156,7 +156,8 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     <details>
     <summary color= blue ><b><i style="color: blue;">Linear transformation, SVD, Fourier transformations</i></b></summary>
       
-    
+    <p style="fontcolor: purple;">
+      
       * **Linear transformation** -
 
         Linear transformations are mathematical operations that maintain the fundamental properties of vector spaces.
@@ -175,6 +176,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
         The Fourier transform allows us to express complex signals as combinations of simpler sinusoidal components, revealing their frequency and amplitude characteristics.
         This is particularly useful for analyzing and processing signals in fields of image analysis, and data compression.
 
+</p>
   </details>
 
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
