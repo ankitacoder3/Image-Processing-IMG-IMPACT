@@ -23,7 +23,7 @@ In the project ```IMG-IMPACT```, several    ```Image Processing Techniques``` ar
 
 These ```Techniques``` include various <i> **Filters** </i> like ```Median filter```, ```Gaussian filter```, ```Linear filter```, etc... 
 
-The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```, ```R0otation```, etc... 
+The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```, ```Rotation```, etc... 
 
 </br>
 
@@ -45,7 +45,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 ### <b>Repository Structure :</b>
 
 <details>
-  <summary color= blue ><u><b><i>IMG-IMPACT repo structure</i></b> <click for details...></u></summary>
+  <summary color= blue ><u><b><i>IMG-IMPACT repo structure</i></b> (click for details...)</u></summary>
 
   Below is the structure of the ```IMG-IMPACT``` project repository
   
