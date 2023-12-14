@@ -154,8 +154,8 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   * Concepts :
     <details>
-    <summary color= blue ><u> <b><i>Linear transformation, SVD, Fourier transformations</i></b></u></summary>
-
+    <summary color= blue ><u><b><a href="#concept"><i>Linear transformation, SVD, Fourier transformations</i></a></b></u></summary>
+      <a name="concept"></a>
     
       * **Linear transformation** -
 
