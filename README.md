@@ -45,7 +45,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 ### <b>Repository Structure :</b>
 
 <details>
-  <summary color= blue ><u><b><i>IMG-IMPACT repo structure</i></b> (click for details...)</u></summary>
+  <summary color= blue ><u><b><i>IMG-IMPACT repo structure</i></b> click...</u></summary>
 
   Below is the structure of the ```IMG-IMPACT``` project repository
   
@@ -163,7 +163,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
   * Concepts :
     <details>
-    <summary color= blue><u><b><i style="color: blue;">Linear transformation, SVD, Fourier transformations</i></b>(click for more details...)</u></summary>
+    <summary color= blue><u><b><i style="color: blue;">Linear transformation, SVD, Fourier transformations</i></b> (click for more details...)</u></summary>
       
     <p style="fontcolor: purple;">
       
