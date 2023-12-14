@@ -344,7 +344,10 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 <br>
 
-* IMG-IMPACT application can ***transform the pictures***, given as input, into different variations of the same picture.
+* IMG-IMPACT application can ***transform the pictures***, given as input, into ***different variations*** of the same picture.
+
+
+* IMG-IMPACT application has ***many default images*** in the 'Images' directory. The user can ***select any image***.
 
   
 * IMG-IMPACT application has ***many filters*** like linear filter, median filter etc. The user can ***select any filter***.
@@ -355,8 +358,11 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   
 * IMG-IMPACT can be used to ***create new images***, from the old images.
 
+  
+* Finally, IMG-IMPACT can be used to save the ***new  created, editted and filtered images***, with ***default image names or user defined names***, as per the ***user's choice***.
+
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
 <a name="end"></a>
-Thank you for exploring the IMG-IMPACT project. Happy Image Filtering and Processing! 🍿🎬
+Thank you for exploring the IMG-IMPACT project. Happy Image Editting, Filtering and Processing! 🍿🎬
 
