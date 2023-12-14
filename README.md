@@ -307,7 +307,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 <br>
 
-  * Choose if you ***want to save images*** or not
+  * Choose if you ***want to save editted images*** or not
 
   ![image](https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT/assets/73939061/d865cec1-ad34-4e31-99d5-f6e505e9e7eb)
 
