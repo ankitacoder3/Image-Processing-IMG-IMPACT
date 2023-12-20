@@ -50,7 +50,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   Below is the structure of the ```IMG-IMPACT``` project repository
   
   ```plaintext
-    Image-Processing--IMG-IMPACT/
+    Image-Processing-IMG-IMPACT/
     │   
     ├── IMG-IMPACT/           # Project Folder
     │   │              
@@ -198,9 +198,9 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 
 <br>
 
-  1. Clone the ```'Image-Processing--IMG-IMPACT'``` github repository.
+  1. Clone the ```'Image-Processing-IMG-IMPACT'``` github repository.
      ```sh
-     git clone https://github.com/ankitacoder3/Image-Processing--IMG-IMPACT.git
+     git clone https://github.com/ankitacoder3/Image-Processing-IMG-IMPACT.git
       ```
      <br>
      
