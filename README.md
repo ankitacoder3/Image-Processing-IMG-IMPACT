@@ -363,7 +363,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   
 * Finally, IMG-IMPACT can be used to save the ***new  created, editted and filtered images***, with ***default image names or user defined names***, as per the ***user's choice***.
 
-* This project could also be used as a `project` for `Linear Algebra courses`, like `UE20MA251`.
+* This project could also be used as a `project` for `Linear Algebra courses`, like `UE20MA251` or ue20ma251.
 
       
 * Other Examples or Other Usage:
