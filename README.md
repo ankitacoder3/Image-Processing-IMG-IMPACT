@@ -3,7 +3,7 @@
 
 In the project ```IMG-IMPACT```, several    ```Image Processing Techniques``` are used, to ````IMPACT THE IMAGES````.
 
-The project ```IMG-IMPACT```, was used for the ```Linear Algebra``` course, UE20MA251.
+This project was also used as a project for the ```Linear Algebra``` course, UE20MA251.
 
 <br>
 
