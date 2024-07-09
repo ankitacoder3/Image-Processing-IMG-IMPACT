@@ -363,12 +363,13 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   
 * Finally, IMG-IMPACT can be used to save the ***new  created, editted and filtered images***, with ***default image names or user defined names***, as per the ***user's choice***.
 
+* This project could also be used as a `project` for `Linear Algebra courses`, like `UE20MA251`.
+      
 * Other Examples or Other Usage:
-
     * Use IMG-IMPACT to batch process a series of images with a specific filter.
     * Employ IMG-IMPACT in a data preprocessing pipeline for machine learning models that require image data.
     * Utilize IMG-IMPACT for educational purposes to demonstrate the effects of different image processing techniques.
-    * This could also be used as a `project` for `Linear Algebra courses`, like `UE20MA251`.
+
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
 <a name="end"></a>
