@@ -3,7 +3,7 @@
 
 In the project ```IMG-IMPACT```, several    ```Image Processing Techniques``` are used, to ````IMPACT THE IMAGES````.
 
-This project was also used as a project for the ```Linear Algebra``` course, UE20MA251.
+This project is based on the ```Linear Algebra project```, which was part of the course ```UE20MA251```.
 
 <br>
 
@@ -368,7 +368,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     * Use IMG-IMPACT to batch process a series of images with a specific filter.
     * Employ IMG-IMPACT in a data preprocessing pipeline for machine learning models that require image data.
     * Utilize IMG-IMPACT for educational purposes to demonstrate the effects of different image processing techniques.
-    * This could also be used as a `project` for `Linear Algebra courses`, like `UE20CS253`.
+    * This could also be used as a `project` for `Linear Algebra courses`, like `UE20MA251`.
   <p align="right"><a href="#readme-top">Back to TOP</a></p>
   </br>
 <a name="end"></a>
