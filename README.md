@@ -375,6 +375,6 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
   </br>
   
 <a name="end"></a>
-Thank you for exploring the IMG-IMPACT project. Happy Image Editting, Filtering and Processing! 🖼️📷
+Thank you for exploring the IMG-IMPACT project. Happy Image Editting, Filtering and Processing ! 🖼️ 🔄
 
 ###
