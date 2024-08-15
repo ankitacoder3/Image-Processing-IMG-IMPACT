@@ -377,4 +377,5 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
 <a name="end"></a>
 Thank you for exploring the IMG-IMPACT project. Happy Image Editting, Filtering and Processing! 🖼️ 🔄
 
+
 ###
