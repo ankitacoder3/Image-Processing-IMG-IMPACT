@@ -92,6 +92,7 @@ The other ```Technologies``` implemented here are ```Scaling```, ```Cropping```,
     │   │    ├── 10_ImageScaling.py
     │   │    └── 11_ImageShearing.py
     │   │ 
+    │   ├── LICENSE.txt   # License file 
     │   └── IMG-IMPACT.png   # Project Logo
     │   
     └─── README.md           # Repository README
